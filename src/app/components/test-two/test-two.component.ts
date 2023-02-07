@@ -18,7 +18,7 @@ export class TestTwoComponent implements OnInit{
   ngOnInit() {
     this.route.params.subscribe(params =>{
       console.log(params)
-      this.id = params['id'];
+      this.id = params['matchId'];
     })
   }
 }

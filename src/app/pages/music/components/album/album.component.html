@@ -1,1 +1,10 @@
-<p>album works!</p>
+<section>
+  <div *ngFor="let person of people; index as i; odd as oddPerson"
+       class="person"
+       [ngClass]="{'person--odd': oddPerson, 'person--luke': person.name === 'Luke Skywalker'}">
+    <h1>Person # {{i + 1}}</h1>
+    <p>{{person.name}}</p>
+    <p>{{person.height}}</p>
+    <p>{{person.skin_color}}</p>
+  </div>
+</section>

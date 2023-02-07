@@ -1,0 +1,15 @@
+.person {
+  margin: 24px;
+  background-color: darkgray;
+  border: 1px solid darkslategray;
+  border-radius: 10px;
+  padding: 16px;
+
+  &--odd{
+    background-color: darkslategray;
+  }
+
+  &--luke{
+    background-color: cornflowerblue;
+  }
+}
