@@ -3,8 +3,9 @@
        class="person"
        [ngClass]="{'person--odd': oddPerson, 'person--luke': person.name === 'Luke Skywalker'}">
     <h1>Person # {{i + 1}}</h1>
-    <p>{{person.name}}</p>
-    <p>{{person.height}}</p>
-    <p>{{person.skin_color}}</p>
+    <p>{{person.name | nameAppender: 'Doe'}}</p>
+    <p>{{person.height | currency }}</p>
+    <p>{{person.mass | percent}}</p>
+    <p>{{person.skin_color | nameAppender: 'Cualquier cosa'}}</p>
   </div>
 </section>

@@ -5,12 +5,14 @@ import { SharedRoutingModule } from './shared-routing.module';
 import { CoreModule } from "../core/core.module";
 import { CommonButtonComponent } from './components/common-button/common-button.component';
 import { NavComponent } from './components/nav/nav.component';
+import { NameAppenderPipe } from './pipes/name-appender.pipe';
 
 
 @NgModule({
   declarations: [
     CommonButtonComponent,
-    NavComponent
+    NavComponent,
+    NameAppenderPipe
   ],
   imports: [
     CommonModule,
@@ -19,7 +21,8 @@ import { NavComponent } from './components/nav/nav.component';
   ],
   exports:[
     CommonButtonComponent,
-    NavComponent
+    NavComponent,
+    NameAppenderPipe
   ]
 })
 export class SharedModule { }
